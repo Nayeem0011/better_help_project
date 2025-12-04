@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* .radial-dark-teal {
+  background: radial-gradient(51.09% 51.09% at 50% 48.91%, rgba(17, 61, 60, 0) 0%, #113D3C 100%);
+} */
+/* :root {
+  --background: #000000;
+  --foreground: #000000;
+  --font-sans: "Inter", "Staff Grotesk Test", sans-serif;
+  --font-mono: "Inter", monospace;
 }
 
 @theme inline {
@@ -14,13 +20,38 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #000000;
   }
 }
+ */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* @font-face {
+  font-family: "Staff Grotesk Test";
+  src: url("./font/StaffGroteskTest-Medium-BF66385475c19b6.otf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 500;
 }
+@font-face {
+  font-family: "Staff Grotesk Test";
+  src: url("./font/StaffGroteskTest-Regular-BF66385476bf383.otf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Staff Grotesk Test";
+  src: url("./font/StaffGroteskTest-Bold-BF66385476837b7.otf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/inter_Inter-Regular.woff") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+} */
