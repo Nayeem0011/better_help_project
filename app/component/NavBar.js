@@ -38,7 +38,7 @@ const NavBar = () => {
       <div className="relative inset-0 z-60 flex justify-center w-full">
         <div className={`fixed top-0 left-0 w-full flex justify-center z-50 transition-all duration-800
         ${showNav ? "translate-y-0" : "-translate-y-[120px]"}`}>
-          <nav className="flex items-center justify-between w-full max-w-[90%] absolute top-8">
+          <nav className="flex items-center justify-between w-full px-[30px] sm:px-[60px] md:px-[30px] lg:px-[60px] xl:px-[110px] 2xl:px-[200px] absolute top-8">
 
             {/* Logo */}
             <Image src={nav_logo} className='w-[130px] md:w-[150px] lg:w-[180px] xl:w-[214px]' alt="loading ..." />
@@ -51,9 +51,9 @@ const NavBar = () => {
                   onClick={() => setActiveIndex(index)}
                   className={`font-normal py-2 px-3 lg:py-2.5 lg:px-4 xl:py-2.5 xl:px-5 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] leading-[120%] cursor-pointer rounded-full transition-all duration-300
                      ${activeIndex === index
-                      ? "bg-[#15081459] text-white opacity-100"
+                      ? "bg-white/5 text-white opacity-100"
                       : "text-white opacity-60"}
-                       hover:bg-[#15081459] hover:text-white hover:opacity-100`}>
+                       hover:bg-white/5 hover:text-white hover:opacity-100`}>
                   {item}
                 </li>
               ))}

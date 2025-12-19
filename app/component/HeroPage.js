@@ -7,6 +7,7 @@ import GroupLine from "../svg/GroupLine";
 import Image from 'next/image';
 import heroimage01 from './image/heroimage01.png';
 import videoicon from './image/videoicon.png';
+import heroimage2 from './image/heroimage2.png';
 
 const HeroPage = () => {
   return (
@@ -21,8 +22,8 @@ const HeroPage = () => {
       <div className="absolute inset-0 z-10 bg-[radial-gradient(50%_56.08%_at_50%_43.92%,rgba(0,0,0,0)_0%,#113D3C_100%)]"></div>
 
       {/* Content */}
-      <div className="relative z-20 pt-[194px] w-full max-w-[90%] mx-auto">
-        <div className="flex ">
+      <div className="relative z-20 pt-[194px] w-full max-w-[80%] mx-auto">
+        <div className="flex justify-between">
           <div className="flex flex-col gap-10">
             <h1 className="text-[#FFFFFF] font-bold text-[96px] leading-[120%] tracking-normal">
               You <span className="bg-[#35b13c] px-2 pb-1 rounded-2xl inline-block">deserve</span> <br /> to be happy
@@ -75,7 +76,7 @@ const HeroPage = () => {
           </div>
 
           <div>
-            ghsfh
+            <Image src={heroimage2} className='w-[725px] h-[456px] rounded-3xl' alt="loading ..." />
           </div>
         </div>
       </div>
@@ -85,3 +86,5 @@ const HeroPage = () => {
 };
 
 export default HeroPage;
+
+
