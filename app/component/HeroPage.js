@@ -4,8 +4,9 @@
 // import "slick-carousel/slick/slick.css";
 import GroupLine from "../svg/GroupLine";
 
-// import Image from 'next/image';
-// import pikaso_enhance from './image/pikaso_enhance.svg';
+import Image from 'next/image';
+import heroimage01 from './image/heroimage01.png';
+import videoicon from './image/videoicon.png';
 
 const HeroPage = () => {
   return (
@@ -59,8 +60,17 @@ const HeroPage = () => {
               </div>
             </button>
 
-            <div>
-              adf
+            <div className="flex gap-8">
+              <Image src={heroimage01} className='w-[199px] h-[198px] rounded-2xl' alt="loading ..." />
+              <div className='flex flex-col items-start gap-6'>
+                <p className="text-white font-normal text-[24px] leading-[150%] tracking-normal">
+                  You can message your therapist <br className='hidden lg:block' /> at anytime, from anywhere. You <br className='hidden lg:block' /> also get to schedule live sessions.
+                </p>
+                <button className="flex items-center gap-4 text-white font-normal text-[18px] leading-[150%] tracking-normal">
+                  <Image src={videoicon} className="w-[50px] h-[50px] rounded-2xl" alt="loading ..." />
+                  <span>Play this episode</span>
+                </button>
+              </div>
             </div>
           </div>
 
