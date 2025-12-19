@@ -8,6 +8,10 @@ import Image from 'next/image';
 import heroimage01 from './image/heroimage01.png';
 import videoicon from './image/videoicon.png';
 import heroimage2 from './image/heroimage2.png';
+import heroimage3 from './image/heroimage3.png';
+import heroimage4 from './image/heroimage4.png';
+import heroimage5 from './image/heroimage5.png';
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const HeroPage = () => {
   return (
@@ -75,12 +79,56 @@ const HeroPage = () => {
             </div>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center gap-10">
             <Image src={heroimage2} className='w-[725px] h-[456px] rounded-3xl' alt="loading ..." />
+
+            <div className="flex gap-4">
+              {/* CARD 1 */}
+              <div className="relative w-[231px] h-[204px]">
+                <Image src={heroimage3} className='w-[231px] h-[204px]' alt="loading ..." />
+                <div className="absolute inset-0 pt-6 pl-4">
+                  <p className="text-white font-normal text-[32px] leading-[120%] tracking-normal">
+                    Individual
+                  </p>
+                  <p className="flex items-center gap-2 pt-1.5 text-white font-normal text-[12px] leading-[120%] tracking-normal">
+                    For myself
+                    <span><FaRegArrowAltCircleRight className="w-4 h-4" /></span>
+                  </p>
+                </div>
+              </div>
+
+              {/* CARD 2 */}
+              <div className="relative w-[231px] h-[204px]">
+                <Image src={heroimage4} className='w-[231px] h-[204px] ' alt="loading ..." />
+                <div className="absolute inset-0 pt-6 pl-4">
+                  <p className="text-white font-normal text-[32px] leading-[120%] tracking-normal">
+                    Couples
+                  </p>
+                  <p className="flex items-center gap-2 pt-1.5 text-white font-normal text-[12px] leading-[120%] tracking-normal">
+                    For me and my partner
+                    <span><FaRegArrowAltCircleRight className="w-4 h-4" /></span>
+                  </p>
+                </div>
+              </div>
+
+              {/* CARD 3 */}
+              <div className="relative w-[231px] h-[204px]">
+                <Image src={heroimage5} className='w-[231px] h-[204px] ' alt="loading ..." />
+                <div className="absolute inset-0 pt-6 pl-4">
+                  <p className="text-white font-normal text-[32px] leading-[120%] tracking-normal">
+                    Teen
+                  </p>
+                  <p className="flex items-center gap-2 pt-1.5 text-white font-normal text-[12px] leading-[120%] tracking-normal">
+                    For my child
+                    <span><FaRegArrowAltCircleRight className="w-4 h-4" /></span>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
-
     </section>
   );
 };
